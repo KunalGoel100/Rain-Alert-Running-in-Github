@@ -35,7 +35,7 @@ Actual_Receiver_Number = os.environ.get("Actual_Receiver_Number")
 
 client = Client(Actual_SID,Actual_Token)
 message = client.messages.create(
-    body = f"Hi there, The weather forecast by Kunal, for you is, {Forecast}! ",
+    body = f"Wats up, The weather forecast by Kunal, for you is, {Forecast}! ",
     from_ = Actual_Number,
     to = Actual_Receiver_Number
 )
