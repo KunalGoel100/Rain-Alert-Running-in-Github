@@ -31,11 +31,12 @@ print(Forecast)
 Actual_SID = os.environ.get("Actual_SID")
 Actual_Token = os.environ.get("Actual_Token")
 Actual_Number = os.environ.get("Actual_Number")
+Actual_Receiver_Number = os.environ.get("Actual_Receiver_Number")
 
 client = Client(Actual_SID,Actual_Token)
 message = client.messages.create(
     body = f"Hi there, The weather forecast by Kunal, for you is, {Forecast}! ",
     from_ = Actual_Number,
-    to = "whatsapp:+919654291639"
+    to = Actual_Receiver_Number
 )
 print(message.status)
