@@ -2,7 +2,7 @@ import requests
 import os
 from twilio.rest import Client
 
-ApiKey = os.environ.get("ApiKey")
+ApiKey = os.environ.get("APIKEY")
 address = "https://api.openweathermap.org/data/2.5/forecast"
 
 param = {"lat":28.704060,
@@ -28,10 +28,10 @@ else:
     pass
 print(Forecast)
 
-Actual_SID = os.environ.get("Actual_SID")
-Actual_Token = os.environ.get("Actual_Token")
-Actual_Number = os.environ.get("Actual_Number")
-Actual_Receiver_Number = os.environ.get("Actual_Receiver_Number")
+Actual_SID = os.environ.get("ACTUAL_SID")
+Actual_Token = os.environ.get("ACTUAL_TOKEN")
+Actual_Number = os.environ.get("ACTUAL_NUMBER")
+Actual_Receiver_Number = os.environ.get("ACTUAL_RECEIVER_NUMBER")
 
 client = Client(Actual_SID,Actual_Token)
 message = client.messages.create(
