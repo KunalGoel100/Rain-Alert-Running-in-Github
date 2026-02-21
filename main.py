@@ -31,7 +31,7 @@ print(Forecast)
 Actual_SID = os.environ.get("ACTUAL_SID")
 Actual_Token = os.environ.get("ACTUAL_TOKEN")
 Actual_Number = "whatsapp:+14155238886"
-Actual_Receiver_Number = "whatsapp:+919743718133"
+Actual_Receiver_Number = "whatsapp:+919654291639"
 
 client = Client(Actual_SID,Actual_Token)
 message = client.messages.create(
