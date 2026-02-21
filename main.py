@@ -22,7 +22,9 @@ elif day["weather"][0]["id"] < 600:
     Forecast = "Rainy"
 elif day["weather"][0]["id"] < 700:
     Forecast = "Snowy"
-elif day["weather"][0]["id"] >= 800:
+elif day["weather"][0]["id"] == 800:
+    Forecast = "Clear"
+elif day["weather"][0]["id"] > 800:
     Forecast = "Cloudy"
 else:
     pass
